@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.demo.DemoApplicationTests" time="92.585" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="webdriver.chrome.driver" value="/home/user/dpt/chromedriver-linux64/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/user/dpt/target/test-classes:/home/user/dpt/target/classes:/home/user/.m2/repository/com/google/firebase/firebase-admin/9.2.0/firebase-admin-9.2.0.jar:/home/user/.m2/repository/com/google/api-client/google-api-client/2.2.0/google-api-client-2.2.0.jar:/home/user/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/home/user/.m2/repository/com/google/oauth-client/google-oauth-client/1.34.1/google-oauth-client-1.34.1.jar:/home/user/.m2/repository/com/google/http-client/google-http-client-gson/1.42.3/google-http-client-gson-1.42.3.jar:/home/user/.m2/repository/com/google/http-client/google-http-client-apache-v2/1.42.3/google-http-client-apache-v2-1.42.3.jar:/home/user/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/user/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/home/user/.m2/repository/com/google/api-client/google-api-client-gson/2.2.0/google-api-client-gson-2.2.0.jar:/home/user/.m2/repository/com/google/http-client/google-http-client/1.43.1/google-http-client-1.43.1.jar:/home/user/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/user/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/user/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/user/.m2/repository/io/opencensus/opencensus-api/0.31.1/opencensus-api-0.31.1.jar:/home/user/.m2/repository/io/opencensus/opencensus-contrib-http-util/0.31.1/opencensus-contrib-http-util-0.31.1.jar:/home/user/.m2/repository/com/google/api/api-common/2.12.0/api-common-2.12.0.jar:/home/user/.m2/repository/com/google/auto/value/auto-value-annotations/1.10.1/auto-value-annotations-1.10.1.jar:/home/user/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/user/.m2/repository/com/google/auth/google-auth-library-oauth2-http/1.17.0/google-auth-library-oauth2-http-1.17.0.jar:/home/user/.m2/repository/com/google/auth/google-auth-library-credentials/1.17.0/google-auth-library-credentials-1.17.0.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-storage/2.22.4/google-cloud-storage-2.22.4.jar:/home/user/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/user/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/user/.m2/repository/com/google/http-client/google-http-client-jackson2/1.43.1/google-http-client-jackson2-1.43.1.jar:/home/user/.m2/repository/com/google/apis/google-api-services-storage/v1-rev20230301-2.0.0/google-api-services-storage-v1-rev20230301-2.0.0.jar:/home/user/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-core/2.19.0/google-cloud-core-2.19.0.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-core-http/2.19.0/google-cloud-core-http-2.19.0.jar:/home/user/.m2/repository/com/google/http-client/google-http-client-appengine/1.43.1/google-http-client-appengine-1.43.1.jar:/home/user/.m2/repository/com/google/api/gax-httpjson/0.114.0/gax-httpjson-0.114.0.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-core-grpc/2.19.0/google-cloud-core-grpc-2.19.0.jar:/home/user/.m2/repository/com/google/api/gax/2.29.0/gax-2.29.0.jar:/home/user/.m2/repository/com/google/api/gax-grpc/2.29.0/gax-grpc-2.29.0.jar:/home/user/.m2/repository/io/grpc/grpc-alts/1.55.1/grpc-alts-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-grpclb/1.55.1/grpc-grpclb-1.55.1.jar:/home/user/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.5.2/conscrypt-openjdk-uber-2.5.2.jar:/home/user/.m2/repository/io/grpc/grpc-auth/1.55.1/grpc-auth-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-protobuf/1.55.1/grpc-protobuf-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-protobuf-lite/1.55.1/grpc-protobuf-lite-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-context/1.55.1/grpc-context-1.55.1.jar:/home/user/.m2/repository/com/google/api/grpc/proto-google-iam-v1/1.15.0/proto-google-iam-v1-1.15.0.jar:/home/user/.m2/repository/com/google/protobuf/protobuf-java/3.23.2/protobuf-java-3.23.2.jar:/home/user/.m2/repository/com/google/protobuf/protobuf-java-util/3.23.2/protobuf-java-util-3.23.2.jar:/home/user/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.20.0/proto-google-common-protos-2.20.0.jar:/home/user/.m2/repository/org/threeten/threetenbp/1.6.8/threetenbp-1.6.8.jar:/home/user/.m2/repository/com/google/api/grpc/proto-google-cloud-storage-v2/2.22.4-alpha/proto-google-cloud-storage-v2-2.22.4-alpha.jar:/home/user/.m2/repository/com/google/api/grpc/grpc-google-cloud-storage-v2/2.22.4-alpha/grpc-google-cloud-storage-v2-2.22.4-alpha.jar:/home/user/.m2/repository/com/google/api/grpc/gapic-google-cloud-storage-v2/2.22.4-alpha/gapic-google-cloud-storage-v2-2.22.4-alpha.jar:/home/user/.m2/repository/io/grpc/grpc-api/1.55.1/grpc-api-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-netty-shaded/1.55.1/grpc-netty-shaded-1.55.1.jar:/home/user/.m2/repository/io/perfmark/perfmark-api/0.26.0/perfmark-api-0.26.0.jar:/home/user/.m2/repository/io/grpc/grpc-core/1.55.1/grpc-core-1.55.1.jar:/home/user/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/home/user/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.23/animal-sniffer-annotations-1.23.jar:/home/user/.m2/repository/io/grpc/grpc-stub/1.55.1/grpc-stub-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-googleapis/1.55.1/grpc-googleapis-1.55.1.jar:/home/user/.m2/repository/org/checkerframework/checker-qual/3.32.0/checker-qual-3.32.0.jar:/home/user/.m2/repository/io/grpc/grpc-xds/1.55.1/grpc-xds-1.55.1.jar:/home/user/.m2/repository/io/opencensus/opencensus-proto/0.2.0/opencensus-proto-0.2.0.jar:/home/user/.m2/repository/io/grpc/grpc-services/1.55.1/grpc-services-1.55.1.jar:/home/user/.m2/repository/com/google/re2j/re2j/1.6/re2j-1.6.jar:/home/user/.m2/repository/io/grpc/grpc-rls/1.55.1/grpc-rls-1.55.1.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-firestore/3.13.0/google-cloud-firestore-3.13.0.jar:/home/user/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/user/.m2/repository/com/google/api/grpc/proto-google-cloud-firestore-v1/3.13.0/proto-google-cloud-firestore-v1-3.13.0.jar:/home/user/.m2/repository/com/google/cloud/proto-google-cloud-firestore-bundle-v1/3.13.0/proto-google-cloud-firestore-bundle-v1-3.13.0.jar:/home/user/.m2/repository/io/opencensus/opencensus-contrib-grpc-util/0.31.1/opencensus-contrib-grpc-util-0.31.1.jar:/home/user/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/user/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/user/.m2/repository/io/netty/netty-codec-http/4.1.104.Final/netty-codec-http-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-common/4.1.104.Final/netty-common-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-buffer/4.1.104.Final/netty-buffer-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-codec/4.1.104.Final/netty-codec-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-handler/4.1.104.Final/netty-handler-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-resolver/4.1.104.Final/netty-resolver-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.104.Final/netty-transport-native-unix-common-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-transport/4.1.104.Final/netty-transport-4.1.104.Final.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.1/spring-boot-starter-web-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.1/spring-boot-starter-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.1/spring-boot-starter-logging-3.2.1.jar:/home/user/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/home/user/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/home/user/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/user/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/user/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/user/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.1/spring-boot-starter-json-3.2.1.jar:/home/user/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/user/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/user/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.1/spring-boot-starter-tomcat-3.2.1.jar:/home/user/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.17/tomcat-embed-core-10.1.17.jar:/home/user/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.17/tomcat-embed-el-10.1.17.jar:/home/user/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.17/tomcat-embed-websocket-10.1.17.jar:/home/user/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-beans/6.1.2/spring-beans-6.1.2.jar:/home/user/.m2/repository/io/micrometer/micrometer-observation/1.12.1/micrometer-observation-1.12.1.jar:/home/user/.m2/repository/io/micrometer/micrometer-commons/1.12.1/micrometer-commons-1.12.1.jar:/home/user/.m2/repository/org/springframework/spring-webmvc/6.1.2/spring-webmvc-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-aop/6.1.2/spring-aop-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-expression/6.1.2/spring-expression-6.1.2.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-java/4.11.0/selenium-java-4.11.0.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.1/selenium-api-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.1/selenium-chrome-driver-4.14.1.jar:/home/user/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.1/selenium-chromium-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.1/selenium-json-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.1/selenium-manager-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.11.0/selenium-devtools-v113-4.11.0.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.11.0/selenium-devtools-v114-4.11.0.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v115/4.11.0/selenium-devtools-v115-4.11.0.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.1/selenium-devtools-v85-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.1/selenium-edge-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.1/selenium-firefox-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.1/selenium-http-4.14.1.jar:/home/user/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.1/selenium-ie-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.1/selenium-remote-driver-4.14.1.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-api/1.31.0/opentelemetry-api-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-context/1.31.0/opentelemetry-context-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.31.0/opentelemetry-exporter-logging-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.31.0/opentelemetry-sdk-common-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.31.0/opentelemetry-sdk-extension-autoconfigure-spi-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.31.0/opentelemetry-sdk-extension-autoconfigure-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.31.0-alpha/opentelemetry-api-events-1.31.0-alpha.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.31.0/opentelemetry-sdk-trace-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.31.0/opentelemetry-sdk-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.31.0/opentelemetry-sdk-metrics-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.31.0-alpha/opentelemetry-extension-incubator-1.31.0-alpha.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.31.0/opentelemetry-sdk-logs-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/home/user/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.1/selenium-os-4.14.1.jar:/home/user/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.1/selenium-safari-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.1/selenium-support-4.14.1.jar:/home/user/.m2/repository/com/squareup/okhttp3/okhttp/4.10.0/okhttp-4.10.0.jar:/home/user/.m2/repository/com/squareup/okio/okio-jvm/3.0.0/okio-jvm-3.0.0.jar:/home/user/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.21/kotlin-stdlib-jdk8-1.9.21.jar:/home/user/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.21/kotlin-stdlib-jdk7-1.9.21.jar:/home/user/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.21/kotlin-stdlib-common-1.9.21.jar:/home/user/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.21/kotlin-stdlib-1.9.21.jar:/home/user/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/user/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/user/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/user/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-devtools/3.2.1/spring-boot-devtools-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot/3.2.1/spring-boot-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.1/spring-boot-starter-test-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-test/3.2.1/spring-boot-test-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.1/spring-boot-test-autoconfigure-3.2.1.jar:/home/user/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/user/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/user/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/user/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/user/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/user/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/user/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/user/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/user/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/user/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/user/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/user/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/user/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/user/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/user/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/user/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/user/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/user/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/user/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/home/user/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/user/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/user/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/user/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-jcl/6.1.2/spring-jcl-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-test/6.1.2/spring-test-6.1.2.jar:/home/user/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/nix/store/mgc9qlqijrsryv873dnwy0n1l8lw5kna-openjdk-19.0.2+7/lib/openjdk/lib"/>
+    <property name="sun.java.command" value="/home/user/dpt/target/surefire/surefirebooter-20250612081012173_3.jar /home/user/dpt/target/surefire 2025-06-12T08-10-11_898-jvmRun1 surefire-20250612081012173_1tmp surefire_0-20250612081012173_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/user/dpt/target/test-classes:/home/user/dpt/target/classes:/home/user/.m2/repository/com/google/firebase/firebase-admin/9.2.0/firebase-admin-9.2.0.jar:/home/user/.m2/repository/com/google/api-client/google-api-client/2.2.0/google-api-client-2.2.0.jar:/home/user/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/home/user/.m2/repository/com/google/oauth-client/google-oauth-client/1.34.1/google-oauth-client-1.34.1.jar:/home/user/.m2/repository/com/google/http-client/google-http-client-gson/1.42.3/google-http-client-gson-1.42.3.jar:/home/user/.m2/repository/com/google/http-client/google-http-client-apache-v2/1.42.3/google-http-client-apache-v2-1.42.3.jar:/home/user/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/user/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/home/user/.m2/repository/com/google/api-client/google-api-client-gson/2.2.0/google-api-client-gson-2.2.0.jar:/home/user/.m2/repository/com/google/http-client/google-http-client/1.43.1/google-http-client-1.43.1.jar:/home/user/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/user/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/user/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/user/.m2/repository/io/opencensus/opencensus-api/0.31.1/opencensus-api-0.31.1.jar:/home/user/.m2/repository/io/opencensus/opencensus-contrib-http-util/0.31.1/opencensus-contrib-http-util-0.31.1.jar:/home/user/.m2/repository/com/google/api/api-common/2.12.0/api-common-2.12.0.jar:/home/user/.m2/repository/com/google/auto/value/auto-value-annotations/1.10.1/auto-value-annotations-1.10.1.jar:/home/user/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/user/.m2/repository/com/google/auth/google-auth-library-oauth2-http/1.17.0/google-auth-library-oauth2-http-1.17.0.jar:/home/user/.m2/repository/com/google/auth/google-auth-library-credentials/1.17.0/google-auth-library-credentials-1.17.0.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-storage/2.22.4/google-cloud-storage-2.22.4.jar:/home/user/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/user/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/user/.m2/repository/com/google/http-client/google-http-client-jackson2/1.43.1/google-http-client-jackson2-1.43.1.jar:/home/user/.m2/repository/com/google/apis/google-api-services-storage/v1-rev20230301-2.0.0/google-api-services-storage-v1-rev20230301-2.0.0.jar:/home/user/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-core/2.19.0/google-cloud-core-2.19.0.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-core-http/2.19.0/google-cloud-core-http-2.19.0.jar:/home/user/.m2/repository/com/google/http-client/google-http-client-appengine/1.43.1/google-http-client-appengine-1.43.1.jar:/home/user/.m2/repository/com/google/api/gax-httpjson/0.114.0/gax-httpjson-0.114.0.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-core-grpc/2.19.0/google-cloud-core-grpc-2.19.0.jar:/home/user/.m2/repository/com/google/api/gax/2.29.0/gax-2.29.0.jar:/home/user/.m2/repository/com/google/api/gax-grpc/2.29.0/gax-grpc-2.29.0.jar:/home/user/.m2/repository/io/grpc/grpc-alts/1.55.1/grpc-alts-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-grpclb/1.55.1/grpc-grpclb-1.55.1.jar:/home/user/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.5.2/conscrypt-openjdk-uber-2.5.2.jar:/home/user/.m2/repository/io/grpc/grpc-auth/1.55.1/grpc-auth-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-protobuf/1.55.1/grpc-protobuf-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-protobuf-lite/1.55.1/grpc-protobuf-lite-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-context/1.55.1/grpc-context-1.55.1.jar:/home/user/.m2/repository/com/google/api/grpc/proto-google-iam-v1/1.15.0/proto-google-iam-v1-1.15.0.jar:/home/user/.m2/repository/com/google/protobuf/protobuf-java/3.23.2/protobuf-java-3.23.2.jar:/home/user/.m2/repository/com/google/protobuf/protobuf-java-util/3.23.2/protobuf-java-util-3.23.2.jar:/home/user/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.20.0/proto-google-common-protos-2.20.0.jar:/home/user/.m2/repository/org/threeten/threetenbp/1.6.8/threetenbp-1.6.8.jar:/home/user/.m2/repository/com/google/api/grpc/proto-google-cloud-storage-v2/2.22.4-alpha/proto-google-cloud-storage-v2-2.22.4-alpha.jar:/home/user/.m2/repository/com/google/api/grpc/grpc-google-cloud-storage-v2/2.22.4-alpha/grpc-google-cloud-storage-v2-2.22.4-alpha.jar:/home/user/.m2/repository/com/google/api/grpc/gapic-google-cloud-storage-v2/2.22.4-alpha/gapic-google-cloud-storage-v2-2.22.4-alpha.jar:/home/user/.m2/repository/io/grpc/grpc-api/1.55.1/grpc-api-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-netty-shaded/1.55.1/grpc-netty-shaded-1.55.1.jar:/home/user/.m2/repository/io/perfmark/perfmark-api/0.26.0/perfmark-api-0.26.0.jar:/home/user/.m2/repository/io/grpc/grpc-core/1.55.1/grpc-core-1.55.1.jar:/home/user/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/home/user/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.23/animal-sniffer-annotations-1.23.jar:/home/user/.m2/repository/io/grpc/grpc-stub/1.55.1/grpc-stub-1.55.1.jar:/home/user/.m2/repository/io/grpc/grpc-googleapis/1.55.1/grpc-googleapis-1.55.1.jar:/home/user/.m2/repository/org/checkerframework/checker-qual/3.32.0/checker-qual-3.32.0.jar:/home/user/.m2/repository/io/grpc/grpc-xds/1.55.1/grpc-xds-1.55.1.jar:/home/user/.m2/repository/io/opencensus/opencensus-proto/0.2.0/opencensus-proto-0.2.0.jar:/home/user/.m2/repository/io/grpc/grpc-services/1.55.1/grpc-services-1.55.1.jar:/home/user/.m2/repository/com/google/re2j/re2j/1.6/re2j-1.6.jar:/home/user/.m2/repository/io/grpc/grpc-rls/1.55.1/grpc-rls-1.55.1.jar:/home/user/.m2/repository/com/google/cloud/google-cloud-firestore/3.13.0/google-cloud-firestore-3.13.0.jar:/home/user/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/user/.m2/repository/com/google/api/grpc/proto-google-cloud-firestore-v1/3.13.0/proto-google-cloud-firestore-v1-3.13.0.jar:/home/user/.m2/repository/com/google/cloud/proto-google-cloud-firestore-bundle-v1/3.13.0/proto-google-cloud-firestore-bundle-v1-3.13.0.jar:/home/user/.m2/repository/io/opencensus/opencensus-contrib-grpc-util/0.31.1/opencensus-contrib-grpc-util-0.31.1.jar:/home/user/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/user/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/user/.m2/repository/io/netty/netty-codec-http/4.1.104.Final/netty-codec-http-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-common/4.1.104.Final/netty-common-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-buffer/4.1.104.Final/netty-buffer-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-codec/4.1.104.Final/netty-codec-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-handler/4.1.104.Final/netty-handler-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-resolver/4.1.104.Final/netty-resolver-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.104.Final/netty-transport-native-unix-common-4.1.104.Final.jar:/home/user/.m2/repository/io/netty/netty-transport/4.1.104.Final/netty-transport-4.1.104.Final.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.1/spring-boot-starter-web-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.1/spring-boot-starter-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.1/spring-boot-starter-logging-3.2.1.jar:/home/user/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/home/user/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/home/user/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/user/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/user/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/user/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/user/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.1/spring-boot-starter-json-3.2.1.jar:/home/user/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/user/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/user/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.1/spring-boot-starter-tomcat-3.2.1.jar:/home/user/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.17/tomcat-embed-core-10.1.17.jar:/home/user/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.17/tomcat-embed-el-10.1.17.jar:/home/user/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.17/tomcat-embed-websocket-10.1.17.jar:/home/user/.m2/repository/org/springframework/spring-web/6.1.2/spring-web-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-beans/6.1.2/spring-beans-6.1.2.jar:/home/user/.m2/repository/io/micrometer/micrometer-observation/1.12.1/micrometer-observation-1.12.1.jar:/home/user/.m2/repository/io/micrometer/micrometer-commons/1.12.1/micrometer-commons-1.12.1.jar:/home/user/.m2/repository/org/springframework/spring-webmvc/6.1.2/spring-webmvc-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-aop/6.1.2/spring-aop-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-context/6.1.2/spring-context-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-expression/6.1.2/spring-expression-6.1.2.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-java/4.11.0/selenium-java-4.11.0.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.1/selenium-api-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.1/selenium-chrome-driver-4.14.1.jar:/home/user/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.1/selenium-chromium-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.1/selenium-json-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.1/selenium-manager-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.11.0/selenium-devtools-v113-4.11.0.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.11.0/selenium-devtools-v114-4.11.0.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v115/4.11.0/selenium-devtools-v115-4.11.0.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.1/selenium-devtools-v85-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.1/selenium-edge-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.1/selenium-firefox-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.1/selenium-http-4.14.1.jar:/home/user/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.1/selenium-ie-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.1/selenium-remote-driver-4.14.1.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-api/1.31.0/opentelemetry-api-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-context/1.31.0/opentelemetry-context-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.31.0/opentelemetry-exporter-logging-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.31.0/opentelemetry-sdk-common-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.31.0/opentelemetry-sdk-extension-autoconfigure-spi-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.31.0/opentelemetry-sdk-extension-autoconfigure-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.31.0-alpha/opentelemetry-api-events-1.31.0-alpha.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.31.0/opentelemetry-sdk-trace-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.31.0/opentelemetry-sdk-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.31.0/opentelemetry-sdk-metrics-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.31.0-alpha/opentelemetry-extension-incubator-1.31.0-alpha.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.31.0/opentelemetry-sdk-logs-1.31.0.jar:/home/user/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/home/user/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.1/selenium-os-4.14.1.jar:/home/user/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.1/selenium-safari-driver-4.14.1.jar:/home/user/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.1/selenium-support-4.14.1.jar:/home/user/.m2/repository/com/squareup/okhttp3/okhttp/4.10.0/okhttp-4.10.0.jar:/home/user/.m2/repository/com/squareup/okio/okio-jvm/3.0.0/okio-jvm-3.0.0.jar:/home/user/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.21/kotlin-stdlib-jdk8-1.9.21.jar:/home/user/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.21/kotlin-stdlib-jdk7-1.9.21.jar:/home/user/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.21/kotlin-stdlib-common-1.9.21.jar:/home/user/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.21/kotlin-stdlib-1.9.21.jar:/home/user/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/user/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/user/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/user/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-devtools/3.2.1/spring-boot-devtools-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot/3.2.1/spring-boot-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.1/spring-boot-autoconfigure-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.1/spring-boot-starter-test-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-test/3.2.1/spring-boot-test-3.2.1.jar:/home/user/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.1/spring-boot-test-autoconfigure-3.2.1.jar:/home/user/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/user/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/user/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/user/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/user/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/user/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/user/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/user/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/user/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/user/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/user/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/user/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/user/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/user/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/user/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/user/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/user/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/user/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/user/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/home/user/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/user/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/user/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/user/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-jcl/6.1.2/spring-jcl-6.1.2.jar:/home/user/.m2/repository/org/springframework/spring-test/6.1.2/spring-test-6.1.2.jar:/home/user/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/user"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="/nix/store/mgc9qlqijrsryv873dnwy0n1l8lw5kna-openjdk-19.0.2+7/lib/openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/user/dpt"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/user/dpt/target/surefire/surefirebooter-20250612081012173_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2+7-nixos"/>
+    <property name="user.name" value="user"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.6.87+"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/user/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="/home/user/dpt"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="25797"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="N/A"/>
+    <property name="java.vm.version" value="19.0.2+7-nixos"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[demo] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.example.demo.DemoApplicationTests" time="0.047">
+    <error message="Failed to load ApplicationContext for [WebMergedContextConfiguration@591ba330 testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.MainApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3de8f619, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7bd7d6d6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5c7933ad, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@1be2019a, org.springframework.boot.test.context.SpringBootTestAnnotation@7e4b8106], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@591ba330 testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.MainApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3de8f619, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7bd7d6d6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5c7933ad, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@1be2019a, org.springframework.boot.test.context.SpringBootTestAnnotation@7e4b8106], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at com.example.demo.UIDetector.analyze(UIDetector.java:22)
+	at com.example.demo.DarkPatternApplication.run(DarkPatternApplication.java:33)
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:798)
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:782)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1458)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 17 more
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:248)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	... 51 more
+]]></error>
+    <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+08:10:14.656 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:10:15.107 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.MainApplication for test class com.example.demo.DemoApplicationTests
+08:10:15.935 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2025-06-12T08:10:16.804Z  INFO 25797 --- [demo] [           main] com.example.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 19.0.2 with PID 25797 (started by user in /home/user/dpt)
+2025-06-12T08:10:16.807Z  INFO 25797 --- [demo] [           main] com.example.demo.DemoApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-06-12T08:10:20.899Z  INFO 25797 --- [demo] [           main] com.example.demo.DemoApplicationTests    : Started DemoApplicationTests in 5.115 seconds (process running for 8.327)
+🟢 Application started... beginning web crawling.
+Starting crawl from: https://www.fonts.googleapis.com
+Crawling complete for: https://www.fonts.googleapis.com
+Starting crawl from: https://www.facebook.com
+Crawling complete for: https://www.facebook.com
+Starting crawl from: https://www.twitter.com
+Crawling complete for: https://www.twitter.com
+Starting crawl from: https://www.google.com
+Crawling complete for: https://www.google.com
+Starting crawl from: https://www.youtube.com
+Crawling complete for: https://www.youtube.com
+Starting crawl from: https://www.s.w.org
+Crawling complete for: https://www.s.w.org
+Starting crawl from: https://www.instagram.com
+Crawling complete for: https://www.instagram.com
+Starting crawl from: https://www.googletagmanager.com
+Crawling complete for: https://www.googletagmanager.com
+Starting crawl from: https://www.linkedin.com
+Crawling complete for: https://www.linkedin.com
+Starting crawl from: https://www.ajax.googleapis.com
+Crawling complete for: https://www.ajax.googleapis.com
+Starting crawl from: https://www.plus.google.com
+Crawling complete for: https://www.plus.google.com
+Starting crawl from: https://www.gmpg.org
+Crawling complete for: https://www.gmpg.org
+Starting crawl from: https://www.pinterest.com
+Crawling complete for: https://www.pinterest.com
+Starting crawl from: https://www.fonts.gstatic.com
+Crawling complete for: https://www.fonts.gstatic.com
+Starting crawl from: https://www.wordpress.org
+Crawling complete for: https://www.wordpress.org
+Starting crawl from: https://www.en.wikipedia.org
+Crawling complete for: https://www.en.wikipedia.org
+Starting crawl from: https://www.youtu.be
+Crawling complete for: https://www.youtu.be
+Starting crawl from: https://www.maps.google.com
+Crawling complete for: https://www.maps.google.com
+Starting crawl from: https://www.itunes.apple.com
+Crawling complete for: https://www.itunes.apple.com
+Starting crawl from: https://www.github.com
+Crawling complete for: https://www.github.com
+Starting crawl from: https://www.bit.ly
+Crawling complete for: https://www.bit.ly
+Starting crawl from: https://www.play.google.com
+Crawling complete for: https://www.play.google.com
+Starting crawl from: https://www.goo.gl
+Crawling complete for: https://www.goo.gl
+Starting crawl from: https://www.docs.google.com
+Crawling complete for: https://www.docs.google.com
+Starting crawl from: https://www.cdnjs.cloudflare.com
+Crawling complete for: https://www.cdnjs.cloudflare.com
+Starting crawl from: https://www.vimeo.com
+Crawling complete for: https://www.vimeo.com
+Starting crawl from: https://www.support.google.com
+Crawling complete for: https://www.support.google.com
+Starting crawl from: https://www.google-analytics.com
+Crawling complete for: https://www.google-analytics.com
+Starting crawl from: https://www.maps.googleapis.com
+Crawling complete for: https://www.maps.googleapis.com
+Starting crawl from: https://www.flickr.com
+Crawling complete for: https://www.flickr.com
+Starting crawl from: https://www.vk.com
+Crawling complete for: https://www.vk.com
+Starting crawl from: https://www.t.co
+Crawling complete for: https://www.t.co
+Starting crawl from: https://www.reddit.com
+Crawling complete for: https://www.reddit.com
+Starting crawl from: https://www.amazon.com
+Crawling complete for: https://www.amazon.com
+Starting crawl from: https://www.medium.com
+Crawling complete for: https://www.medium.com
+Starting crawl from: https://www.sites.google.com
+Crawling complete for: https://www.sites.google.com
+Starting crawl from: https://www.drive.google.com
+Crawling complete for: https://www.drive.google.com
+Starting crawl from: https://www.creativecommons.org
+Crawling complete for: https://www.creativecommons.org
+Starting crawl from: https://www.microsoft.com
+Crawling complete for: https://www.microsoft.com
+Starting crawl from: https://www.developers.google.com
+Crawling complete for: https://www.developers.google.com
+Starting crawl from: https://www.adobe.com
+Crawling complete for: https://www.adobe.com
+Starting crawl from: https://www.soundcloud.com
+Crawling complete for: https://www.soundcloud.com
+Starting crawl from: https://www.theguardian.com
+Crawling complete for: https://www.theguardian.com
+Starting crawl from: https://www.apis.google.com
+Crawling complete for: https://www.apis.google.com
+Starting crawl from: https://www.ec.europa.eu
+Crawling complete for: https://www.ec.europa.eu
+Starting crawl from: https://www.lh3.googleusercontent.com
+Crawling complete for: https://www.lh3.googleusercontent.com
+Starting crawl from: https://www.chrome.google.com
+Crawling complete for: https://www.chrome.google.com
+Starting crawl from: https://www.cloudflare.com
+Crawling complete for: https://www.cloudflare.com
+Starting crawl from: https://www.nytimes.com
+Crawling complete for: https://www.nytimes.com
+Starting crawl from: https://www.maxcdn.bootstrapcdn.com
+Crawling complete for: https://www.maxcdn.bootstrapcdn.com
+Starting crawl from: https://www.support.microsoft.com
+Crawling complete for: https://www.support.microsoft.com
+Starting crawl from: https://www.blogger.com
+Crawling complete for: https://www.blogger.com
+Starting crawl from: https://www.forbes.com
+Crawling complete for: https://www.forbes.com
+Starting crawl from: https://www.s3.amazonaws.com
+Crawling complete for: https://www.s3.amazonaws.com
+Starting crawl from: https://www.code.jquery.com
+Crawling complete for: https://www.code.jquery.com
+Starting crawl from: https://www.dropbox.com
+Crawling complete for: https://www.dropbox.com
+Starting crawl from: https://www.translate.google.com
+Crawling complete for: https://www.translate.google.com
+Starting crawl from: https://www.paypal.com
+Crawling complete for: https://www.paypal.com
+Starting crawl from: https://www.apps.apple.com
+Crawling complete for: https://www.apps.apple.com
+Starting crawl from: https://www.tinyurl.com
+Crawling complete for: https://www.tinyurl.com
+Starting crawl from: https://www.etsy.com
+Crawling complete for: https://www.etsy.com
+Starting crawl from: https://www.theatlantic.com
+Crawling complete for: https://www.theatlantic.com
+Starting crawl from: https://www.m.facebook.com
+Crawling complete for: https://www.m.facebook.com
+Starting crawl from: https://www.archive.org
+Crawling complete for: https://www.archive.org
+Starting crawl from: https://www.amzn.to
+Crawling complete for: https://www.amzn.to
+Starting crawl from: https://www.cnn.com
+Crawling complete for: https://www.cnn.com
+Starting crawl from: https://www.policies.google.com
+Crawling complete for: https://www.policies.google.com
+Starting crawl from: https://www.commons.wikimedia.org
+Crawling complete for: https://www.commons.wikimedia.org
+Starting crawl from: https://www.issuu.com
+Crawling complete for: https://www.issuu.com
+Starting crawl from: https://www.i.imgur.com
+Crawling complete for: https://www.i.imgur.com
+Starting crawl from: https://www.wordpress.com
+Crawling complete for: https://www.wordpress.com
+Starting crawl from: https://www.wp.me
+Crawling complete for: https://www.wp.me
+Starting crawl from: https://www.businessinsider.com
+Crawling complete for: https://www.businessinsider.com
+Starting crawl from: https://www.yelp.com
+Crawling complete for: https://www.yelp.com
+Starting crawl from: https://www.mail.google.com
+Crawling complete for: https://www.mail.google.com
+Starting crawl from: https://www.support.apple.com
+Crawling complete for: https://www.support.apple.com
+Starting crawl from: https://www.t.me
+Crawling complete for: https://www.t.me
+Starting crawl from: https://www.apple.com
+Crawling complete for: https://www.apple.com
+Starting crawl from: https://www.washingtonpost.com
+Crawling complete for: https://www.washingtonpost.com
+Starting crawl from: https://www.bbc.com
+Crawling complete for: https://www.bbc.com
+Starting crawl from: https://www.gstatic.com
+Crawling complete for: https://www.gstatic.com
+Starting crawl from: https://www.imgur.com
+Crawling complete for: https://www.imgur.com
+Starting crawl from: https://www.amazon.de
+Crawling complete for: https://www.amazon.de
+Starting crawl from: https://www.bbc.co.uk
+Crawling complete for: https://www.bbc.co.uk
+Starting crawl from: https://www.googleads.g.doubleclick.net
+Crawling complete for: https://www.googleads.g.doubleclick.net
+Starting crawl from: https://www.mozilla.org
+Crawling complete for: https://www.mozilla.org
+Starting crawl from: https://www.eventbrite.com
+Crawling complete for: https://www.eventbrite.com
+Starting crawl from: https://www.slideshare.net
+Crawling complete for: https://www.slideshare.net
+Starting crawl from: https://www.w3.org
+Crawling complete for: https://www.w3.org
+Starting crawl from: https://www.forms.gle
+Crawling complete for: https://www.forms.gle
+Starting crawl from: https://www.platform.twitter.com
+Crawling complete for: https://www.platform.twitter.com
+Starting crawl from: https://www.accounts.google.com
+Crawling complete for: https://www.accounts.google.com
+Starting crawl from: https://www.telegraph.co.uk
+Crawling complete for: https://www.telegraph.co.uk
+Starting crawl from: https://www.messenger.com
+Crawling complete for: https://www.messenger.com
+Starting crawl from: https://www.web.archive.org
+Crawling complete for: https://www.web.archive.org
+Starting crawl from: https://www.secure.gravatar.com
+Crawling complete for: https://www.secure.gravatar.com
+Starting crawl from: https://www.usatoday.com
+Crawling complete for: https://www.usatoday.com
+Starting crawl from: https://www.huffingtonpost.com
+Crawling complete for: https://www.huffingtonpost.com
+Starting crawl from: https://www.stackoverflow.com
+Crawling complete for: https://www.stackoverflow.com
+Starting crawl from: https://www.fb.com
+Crawling complete for: https://www.fb.com
+Starting crawl from: https://www.npr.org
+Crawling complete for: https://www.npr.org
+Starting crawl from: https://www.techcrunch.com
+Crawling complete for: https://www.techcrunch.com
+Starting crawl from: https://www.wired.com
+Crawling complete for: https://www.wired.com
+Starting crawl from: https://www.eepurl.com
+Crawling complete for: https://www.eepurl.com
+Starting crawl from: https://www.reuters.com
+Crawling complete for: https://www.reuters.com
+Starting crawl from: https://www.arxiv.org
+Crawling complete for: https://www.arxiv.org
+Starting crawl from: https://www.i0.wp.com
+Crawling complete for: https://www.i0.wp.com
+Starting crawl from: https://www.finance.yahoo.com
+Crawling complete for: https://www.finance.yahoo.com
+Starting crawl from: https://www.player.vimeo.com
+Crawling complete for: https://www.player.vimeo.com
+Starting crawl from: https://www.amazon.fr
+Crawling complete for: https://www.amazon.fr
+Starting crawl from: https://www.developer.mozilla.org
+Crawling complete for: https://www.developer.mozilla.org
+Starting crawl from: https://www.tumblr.com
+Crawling complete for: https://www.tumblr.com
+Starting crawl from: https://www.cnbc.com
+Crawling complete for: https://www.cnbc.com
+Starting crawl from: https://www.booking.com
+Crawling complete for: https://www.booking.com
+Starting crawl from: https://www.zoom.us
+Crawling complete for: https://www.zoom.us
+Starting crawl from: https://www.tools.google.com
+Crawling complete for: https://www.tools.google.com
+Starting crawl from: https://www.wa.me
+Crawling complete for: https://www.wa.me
+Starting crawl from: https://www.paypal.me
+Crawling complete for: https://www.paypal.me
+Starting crawl from: https://www.slack.com
+Crawling complete for: https://www.slack.com
+Starting crawl from: https://www.adwords.google.com
+Crawling complete for: https://www.adwords.google.com
+Starting crawl from: https://www.independent.co.uk
+Crawling complete for: https://www.independent.co.uk
+Starting crawl from: https://www.discord.gg
+Crawling complete for: https://www.discord.gg
+Starting crawl from: https://www.open.spotify.com
+Crawling complete for: https://www.open.spotify.com
+Starting crawl from: https://www.tripadvisor.com
+Crawling complete for: https://www.tripadvisor.com
+Starting crawl from: https://www.gsuite.google.com
+Crawling complete for: https://www.gsuite.google.com
+Starting crawl from: https://www.behance.net
+Crawling complete for: https://www.behance.net
+Starting crawl from: https://www.thinkwithgoogle.com
+Crawling complete for: https://www.thinkwithgoogle.com
+Starting crawl from: https://www.who.int
+Crawling complete for: https://www.who.int
+Starting crawl from: https://www.cloud.google.com
+Crawling complete for: https://www.cloud.google.com
+Starting crawl from: https://www.calendar.google.com
+Crawling complete for: https://www.calendar.google.com
+Starting crawl from: https://www.ibm.com
+Crawling complete for: https://www.ibm.com
+Starting crawl from: https://www.analytics.google.com
+Crawling complete for: https://www.analytics.google.com
+Starting crawl from: https://www.lh5.googleusercontent.com
+Crawling complete for: https://www.lh5.googleusercontent.com
+Starting crawl from: https://www.docs.microsoft.com
+Crawling complete for: https://www.docs.microsoft.com
+Starting crawl from: https://www.groups.google.com
+Crawling complete for: https://www.groups.google.com
+Starting crawl from: https://www.mixcloud.com
+Crawling complete for: https://www.mixcloud.com
+Starting crawl from: https://www.google.co.in
+Crawling complete for: https://www.google.co.in
+Starting crawl from: https://www.latimes.com
+Crawling complete for: https://www.latimes.com
+Starting crawl from: https://www.gist.github.com
+Crawling complete for: https://www.gist.github.com
+Starting crawl from: https://www.download.macromedia.com
+Crawling complete for: https://www.download.macromedia.com
+Starting crawl from: https://www.dailymail.co.uk
+Crawling complete for: https://www.dailymail.co.uk
+Starting crawl from: https://www.myaccount.google.com
+Crawling complete for: https://www.myaccount.google.com
+Starting crawl from: https://www.line.me
+Crawling complete for: https://www.line.me
+Starting crawl from: https://www.unsplash.com
+Crawling complete for: https://www.unsplash.com
+Starting crawl from: https://www.addons.mozilla.org
+Crawling complete for: https://www.addons.mozilla.org
+Starting crawl from: https://www.msdn.microsoft.com
+Crawling complete for: https://www.msdn.microsoft.com
+Starting crawl from: https://www.storage.googleapis.com
+Crawling complete for: https://www.storage.googleapis.com
+Starting crawl from: https://www.pagead2.googlesyndication.com
+Crawling complete for: https://www.pagead2.googlesyndication.com
+Starting crawl from: https://www.cdn.jsdelivr.net
+Crawling complete for: https://www.cdn.jsdelivr.net
+Starting crawl from: https://www.g.co
+Crawling complete for: https://www.g.co
+Starting crawl from: https://www.meetup.com
+Crawling complete for: https://www.meetup.com
+Starting crawl from: https://www.bloomberg.com
+Crawling complete for: https://www.bloomberg.com
+Starting crawl from: https://www.books.google.com
+Crawling complete for: https://www.books.google.com
+Starting crawl from: https://www.vox.com
+Crawling complete for: https://www.vox.com
+Starting crawl from: https://www.imdb.com
+Crawling complete for: https://www.imdb.com
+Starting crawl from: https://www.arstechnica.com
+Crawling complete for: https://www.arstechnica.com
+Starting crawl from: https://www.support.mozilla.org
+Crawling complete for: https://www.support.mozilla.org
+Starting crawl from: https://www.amazon.co.uk
+Crawling complete for: https://www.amazon.co.uk
+Starting crawl from: https://www.statista.com
+Crawling complete for: https://www.statista.com
+Starting crawl from: https://www.google.ca
+Crawling complete for: https://www.google.ca
+Starting crawl from: https://www.nbcnews.com
+Crawling complete for: https://www.nbcnews.com
+Starting crawl from: https://www.steemit.com
+Crawling complete for: https://www.steemit.com
+Starting crawl from: https://www.upload.wikimedia.org
+Crawling complete for: https://www.upload.wikimedia.org
+Starting crawl from: https://www.aws.amazon.com
+Crawling complete for: https://www.aws.amazon.com
+Starting crawl from: https://www.amazon.co.jp
+Crawling complete for: https://www.amazon.co.jp
+Starting crawl from: https://www.w3schools.com
+Crawling complete for: https://www.w3schools.com
+Starting crawl from: https://www.weibo.com
+Crawling complete for: https://www.weibo.com
+Starting crawl from: https://www.twitch.tv
+Crawling complete for: https://www.twitch.tv
+Starting crawl from: https://www.moz.com
+Crawling complete for: https://www.moz.com
+Starting crawl from: https://www.drupal.org
+Crawling complete for: https://www.drupal.org
+Starting crawl from: https://www.nypost.com
+Crawling complete for: https://www.nypost.com
+Starting crawl from: https://www.fr.wikipedia.org
+Crawling complete for: https://www.fr.wikipedia.org
+Starting crawl from: https://www.ebay.com
+Crawling complete for: https://www.ebay.com
+Starting crawl from: https://www.sourceforge.net
+Crawling complete for: https://www.sourceforge.net
+Starting crawl from: https://www.godaddy.com
+Crawling complete for: https://www.godaddy.com
+Starting crawl from: https://www.ncbi.nlm.nih.gov
+Crawling complete for: https://www.ncbi.nlm.nih.gov
+Starting crawl from: https://www.wsj.com
+Crawling complete for: https://www.wsj.com
+Starting crawl from: https://www.thenextweb.com
+Crawling complete for: https://www.thenextweb.com
+Starting crawl from: https://www.cdc.gov
+Crawling complete for: https://www.cdc.gov
+Starting crawl from: https://www.photos.google.com
+Crawling complete for: https://www.photos.google.com
+Starting crawl from: https://www.trends.google.com
+Crawling complete for: https://www.trends.google.com
+Starting crawl from: https://www.opera.com
+Crawling complete for: https://www.opera.com
+Starting crawl from: https://www.ftc.gov
+Crawling complete for: https://www.ftc.gov
+Starting crawl from: https://www.j.mp
+Crawling complete for: https://www.j.mp
+Starting crawl from: https://www.about.me
+Crawling complete for: https://www.about.me
+Starting crawl from: https://www.gov.uk
+Crawling complete for: https://www.gov.uk
+Starting crawl from: https://www.i.ytimg.com
+Crawling complete for: https://www.i.ytimg.com
+Starting crawl from: https://www.squareup.com
+Crawling complete for: https://www.squareup.com
+Starting crawl from: https://www.google.co.uk
+Crawling complete for: https://www.google.co.uk
+Starting crawl from: https://www.buzzfeed.com
+Crawling complete for: https://www.buzzfeed.com
+Starting crawl from: https://www.developer.apple.com
+Crawling complete for: https://www.developer.apple.com
+Starting crawl from: https://www.pixabay.com
+Crawling complete for: https://www.pixabay.com
+Starting crawl from: https://www.quora.com
+Crawling complete for: https://www.quora.com
+Starting crawl from: https://www.cnet.com
+Crawling complete for: https://www.cnet.com
+Starting crawl from: https://www.google.com.au
+Crawling complete for: https://www.google.com.au
+Starting crawl from: https://www.myspace.com
+Crawling complete for: https://www.myspace.com
+Starting crawl from: https://www.theglobeandmail.com
+Crawling complete for: https://www.theglobeandmail.com
+Starting crawl from: https://www.shopify.com
+Crawling complete for: https://www.shopify.com
+Starting crawl from: https://www.whitehouse.gov
+Crawling complete for: https://www.whitehouse.gov
+Starting crawl from: https://www.marketingplatform.google.com
+Crawling complete for: https://www.marketingplatform.google.com
+Starting crawl from: https://www.kickstarter.com
+Crawling complete for: https://www.kickstarter.com
+Starting crawl from: https://www.freelancer.com
+Crawling complete for: https://www.freelancer.com
+Starting crawl from: https://www.evernote.com
+Crawling complete for: https://www.evernote.com
+Starting crawl from: https://www.gmail.com
+Crawling complete for: https://www.gmail.com
+Starting crawl from: https://www.static.wixstatic.com
+Crawling complete for: https://www.static.wixstatic.com
+Starting crawl from: https://www.fortune.com
+Crawling complete for: https://www.fortune.com
+Starting crawl from: https://www.wix.com
+Crawling complete for: https://www.wix.com
+Starting crawl from: https://www.dailymotion.com
+Crawling complete for: https://www.dailymotion.com
+Starting crawl from: https://www.goodreads.com
+Crawling complete for: https://www.goodreads.com
+Starting crawl from: https://www.podcasts.google.com
+Crawling complete for: https://www.podcasts.google.com
+Starting crawl from: https://www.google.co.jp
+Crawling complete for: https://www.google.co.jp
+Starting crawl from: https://www.support.cloudflare.com
+Crawling complete for: https://www.support.cloudflare.com
+Starting crawl from: https://www.surveymonkey.com
+Crawling complete for: https://www.surveymonkey.com
+Starting crawl from: https://www.cbsnews.com
+Crawling complete for: https://www.cbsnews.com
+Starting crawl from: https://www.entrepreneur.com
+Crawling complete for: https://www.entrepreneur.com
+Starting crawl from: https://www.bing.com
+Crawling complete for: https://www.bing.com
+Starting crawl from: https://www.engadget.com
+Crawling complete for: https://www.engadget.com
+Starting crawl from: https://www.lh4.googleusercontent.com
+Crawling complete for: https://www.lh4.googleusercontent.com
+Starting crawl from: https://www.tandfonline.com
+Crawling complete for: https://www.tandfonline.com
+Starting crawl from: https://www.cargocollective.com
+Crawling complete for: https://www.cargocollective.com
+Starting crawl from: https://www.join.slack.com
+Crawling complete for: https://www.join.slack.com
+Starting crawl from: https://www.api.whatsapp.com
+Crawling complete for: https://www.api.whatsapp.com
+Starting crawl from: https://www.shutterstock.com
+Crawling complete for: https://www.shutterstock.com
+Starting crawl from: https://www.pbs.twimg.com
+Crawling complete for: https://www.pbs.twimg.com
+Starting crawl from: https://www.blog.google
+Crawling complete for: https://www.blog.google
+Starting crawl from: https://www.ads.google.com
+Crawling complete for: https://www.ads.google.com
+Starting crawl from: https://www.time.com
+Crawling complete for: https://www.time.com
+Starting crawl from: https://www.lifehacker.com
+Crawling complete for: https://www.lifehacker.com
+Starting crawl from: https://www.patreon.com
+Crawling complete for: https://www.patreon.com
+Starting crawl from: https://www.scribd.com
+Crawling complete for: https://www.scribd.com
+Starting crawl from: https://www.lh6.googleusercontent.com
+Crawling complete for: https://www.lh6.googleusercontent.com
+Starting crawl from: https://www.feeds.feedburner.com
+Crawling complete for: https://www.feeds.feedburner.com
+Starting crawl from: https://www.trello.com
+Crawling complete for: https://www.trello.com
+Starting crawl from: https://www.ted.com
+Crawling complete for: https://www.ted.com
+Starting crawl from: https://www.helpx.adobe.com
+Crawling complete for: https://www.helpx.adobe.com
+Starting crawl from: https://www.researchgate.net
+Crawling complete for: https://www.researchgate.net
+Starting crawl from: https://www.fda.gov
+Crawling complete for: https://www.fda.gov
+Starting crawl from: https://www.instructables.com
+Crawling complete for: https://www.instructables.com
+Starting crawl from: https://www.google.de
+Crawling complete for: https://www.google.de
+Starting crawl from: https://www.digitalocean.com
+Crawling complete for: https://www.digitalocean.com
+Starting crawl from: https://www.dribbble.com
+Crawling complete for: https://www.dribbble.com
+Starting crawl from: https://www.ssl.gstatic.com
+Crawling complete for: https://www.ssl.gstatic.com
+Starting crawl from: https://www.variety.com
+Crawling complete for: https://www.variety.com
+Starting crawl from: https://www.indiegogo.com
+Crawling complete for: https://www.indiegogo.com
+Starting crawl from: https://www.salesforce.com
+Crawling complete for: https://www.salesforce.com
+Starting crawl from: https://www.uk.linkedin.com
+Crawling complete for: https://www.uk.linkedin.com
+Starting crawl from: https://www.nasa.gov
+Crawling complete for: https://www.nasa.gov
+Starting crawl from: https://www.codepen.io
+Crawling complete for: https://www.codepen.io
+Starting crawl from: https://www.newyorker.com
+Crawling complete for: https://www.newyorker.com
+Starting crawl from: https://www.abcnews.go.com
+Crawling complete for: https://www.abcnews.go.com
+Starting crawl from: https://www.snapchat.com
+Crawling complete for: https://www.snapchat.com
+Starting crawl from: https://www.googleadservices.com
+Crawling complete for: https://www.googleadservices.com
+Starting crawl from: https://www.sciencedirect.com
+Crawling complete for: https://www.sciencedirect.com
+Starting crawl from: https://www.ft.com
+Crawling complete for: https://www.ft.com
+Starting crawl from: https://www.nature.com
+Crawling complete for: https://www.nature.com
+Starting crawl from: https://www.gofundme.com
+Crawling complete for: https://www.gofundme.com
+Starting crawl from: https://www.500px.com
+Crawling complete for: https://www.500px.com
+Starting crawl from: https://www.qz.com
+Crawling complete for: https://www.qz.com
+Starting crawl from: https://www.dl.dropboxusercontent.com
+Crawling complete for: https://www.dl.dropboxusercontent.com
+Starting crawl from: https://www.store.steampowered.com
+Crawling complete for: https://www.store.steampowered.com
+Starting crawl from: https://www.webmasters.googleblog.com
+Crawling complete for: https://www.webmasters.googleblog.com
+Starting crawl from: https://www.podcasts.apple.com
+Crawling complete for: https://www.podcasts.apple.com
+Starting crawl from: https://www.oracle.com
+Crawling complete for: https://www.oracle.com
+Starting crawl from: https://www.m.youtube.com
+Crawling complete for: https://www.m.youtube.com
+Starting crawl from: https://www.gartner.com
+Crawling complete for: https://www.gartner.com
+Starting crawl from: https://www.web.facebook.com
+Crawling complete for: https://www.web.facebook.com
+Starting crawl from: https://www.blogs.msdn.com
+Crawling complete for: https://www.blogs.msdn.com
+Starting crawl from: https://www.mailchi.mp
+Crawling complete for: https://www.mailchi.mp
+Starting crawl from: https://www.digg.com
+Crawling complete for: https://www.digg.com
+Starting crawl from: https://www.skype.com
+Crawling complete for: https://www.skype.com
+Starting crawl from: https://www.periscope.tv
+Crawling complete for: https://www.periscope.tv
+Starting crawl from: https://www.google.com.br
+Crawling complete for: https://www.google.com.br
+Starting crawl from: https://www.googleblog.blogspot.com
+Crawling complete for: https://www.googleblog.blogspot.com
+Starting crawl from: https://www.de.wikipedia.org
+Crawling complete for: https://www.de.wikipedia.org
+Starting crawl from: https://www.search.google.com
+Crawling complete for: https://www.search.google.com
+Starting crawl from: https://www.npmjs.com
+Crawling complete for: https://www.npmjs.com
+Starting crawl from: https://www.motherboard.vice.com
+Crawling complete for: https://www.motherboard.vice.com
+Starting crawl from: https://www.aboutads.info
+Crawling complete for: https://www.aboutads.info
+Starting crawl from: https://www.pexels.com
+Crawling complete for: https://www.pexels.com
+Starting crawl from: https://www.sxsw.com
+Crawling complete for: https://www.sxsw.com
+Starting crawl from: https://www.fiverr.com
+Crawling complete for: https://www.fiverr.com
+Starting crawl from: https://www.code.google.com
+Crawling complete for: https://www.code.google.com
+Starting crawl from: https://www.cbc.ca
+Crawling complete for: https://www.cbc.ca
+Starting crawl from: https://www.venturebeat.com
+Crawling complete for: https://www.venturebeat.com
+Starting crawl from: https://www.hangouts.google.com
+Crawling complete for: https://www.hangouts.google.com
+Starting crawl from: https://www.mashable.com
+Crawling complete for: https://www.mashable.com
+Starting crawl from: https://www.upwork.com
+Crawling complete for: https://www.upwork.com
+Starting crawl from: https://www.bitly.com
+Crawling complete for: https://www.bitly.com
+Starting crawl from: https://www.music.apple.com
+Crawling complete for: https://www.music.apple.com
+Starting crawl from: https://www.loc.gov
+Crawling complete for: https://www.loc.gov
+Starting crawl from: https://www.news.google.com
+Crawling complete for: https://www.news.google.com
+Starting crawl from: https://www.spotify.com
+Crawling complete for: https://www.spotify.com
+Starting crawl from: https://www.netflix.com
+Crawling complete for: https://www.netflix.com
+Starting crawl from: https://www.hbr.org
+Crawling complete for: https://www.hbr.org
+Starting crawl from: https://www.pbs.org
+Crawling complete for: https://www.pbs.org
+Starting crawl from: https://www.stumbleupon.com
+Crawling complete for: https://www.stumbleupon.com
+Starting crawl from: https://www.walmart.com
+Crawling complete for: https://www.walmart.com
+Starting crawl from: https://www.foursquare.com
+Crawling complete for: https://www.foursquare.com
+Starting crawl from: https://www.amazon.ca
+Crawling complete for: https://www.amazon.ca
+Starting crawl from: https://www.tiny.cc
+Crawling complete for: https://www.tiny.cc
+Starting crawl from: https://www.services.google.com
+Crawling complete for: https://www.services.google.com
+Starting crawl from: https://www.xkcd.com
+Crawling complete for: https://www.xkcd.com
+Starting crawl from: https://www.target.com
+Crawling complete for: https://www.target.com
+Starting crawl from: https://www.developers.facebook.com
+Crawling complete for: https://www.developers.facebook.com
+Starting crawl from: https://www.nginx.com
+Crawling complete for: https://www.nginx.com
+Starting crawl from: https://www.canva.com
+Crawling complete for: https://www.canva.com
+Starting crawl from: https://www.s7.addthis.com
+Crawling complete for: https://www.s7.addthis.com
+Starting crawl from: https://www.elmundo.es
+Crawling complete for: https://www.elmundo.es
+Starting crawl from: https://www.i2.wp.com
+Crawling complete for: https://www.i2.wp.com
+Starting crawl from: https://www.gizmodo.com
+Crawling complete for: https://www.gizmodo.com
+Starting crawl from: https://www.expedia.com
+Crawling complete for: https://www.expedia.com
+Starting crawl from: https://www.picasaweb.google.com
+Crawling complete for: https://www.picasaweb.google.com
+Starting crawl from: https://www.money.cnn.com
+Crawling complete for: https://www.money.cnn.com
+Starting crawl from: https://www.timesofindia.indiatimes.com
+Crawling complete for: https://www.timesofindia.indiatimes.com
+Starting crawl from: https://www.yandex.ru
+Crawling complete for: https://www.yandex.ru
+Starting crawl from: https://www.vice.com
+Crawling complete for: https://www.vice.com
+Starting crawl from: https://www.de-de.facebook.com
+Crawling complete for: https://www.de-de.facebook.com
+Starting crawl from: https://www.pastebin.com
+Crawling complete for: https://www.pastebin.com
+Starting crawl from: https://www.samsung.com
+Crawling complete for: https://www.samsung.com
+Starting crawl from: https://www.rt.com
+Crawling complete for: https://www.rt.com
+Starting crawl from: https://www.ifttt.com
+Crawling complete for: https://www.ifttt.com
+Starting crawl from: https://www.dev.mysql.com
+Crawling complete for: https://www.dev.mysql.com
+Starting crawl from: https://www.giphy.com
+Crawling complete for: https://www.giphy.com
+Starting crawl from: https://www.use.fontawesome.com
+Crawling complete for: https://www.use.fontawesome.com
+Starting crawl from: https://www.houzz.com
+Crawling complete for: https://www.houzz.com
+Starting crawl from: https://www.learningmanager.com
+Crawling complete for: https://www.learningmanager.com
+✅ Crawling finished.
+✅ Firebase initialized.
+🧠 Text Detection Result: true
+2025-06-12T08:11:46.363Z  INFO 25797 --- [demo] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-12T08:11:46.403Z ERROR 25797 --- [demo] [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108) ~[selenium-chromium-driver-4.14.1.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.14.1.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83) ~[selenium-chrome-driver-4.14.1.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72) ~[selenium-chrome-driver-4.14.1.jar:na]
+	at com.example.demo.UIDetector.analyze(UIDetector.java:22) ~[classes/:na]
+	at com.example.demo.DarkPatternApplication.run(DarkPatternApplication.java:33) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:798) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:806) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:782) ~[spring-boot-3.2.1.jar:3.2.1]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:782) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1458) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.1.2.jar:3.1.2]
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:248) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602) ~[selenium-remote-driver-4.14.1.jar:na]
+	... 107 common frames omitted
+
+2025-06-12T08:11:46.434Z  WARN 25797 --- [demo] [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.example.demo.DemoApplicationTests@14b4ce6f]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@591ba330 testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.MainApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3de8f619, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7bd7d6d6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5c7933ad, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@1be2019a, org.springframework.boot.test.context.SpringBootTestAnnotation@7e4b8106], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.1.2.jar:3.1.2]
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108) ~[selenium-chromium-driver-4.14.1.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.14.1.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83) ~[selenium-chrome-driver-4.14.1.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72) ~[selenium-chrome-driver-4.14.1.jar:na]
+	at com.example.demo.UIDetector.analyze(UIDetector.java:22) ~[classes/:na]
+	at com.example.demo.DarkPatternApplication.run(DarkPatternApplication.java:33) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:798) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:806) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:782) ~[spring-boot-3.2.1.jar:3.2.1]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:782) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1458) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.2.jar:6.1.2]
+	... 73 common frames omitted
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:248) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119) ~[selenium-remote-driver-4.14.1.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602) ~[selenium-remote-driver-4.14.1.jar:na]
+	... 107 common frames omitted
+
+]]></system-out>
+    <system-err><![CDATA[Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+{
+  "logs": [
+    {
+      "level": "INFO",
+      "timestamp": 1749715875,
+      "message": "Driver path: /home/user/.cache/selenium/chromedriver/linux64/136.0.7103.113/chromedriver"
+    },
+    {
+      "level": "INFO",
+      "timestamp": 1749715875,
+      "message": "Browser path: /google/idx/builtins/bin/chromium-browser"
+    }
+  ],
+  "result": {
+    "code": 0,
+    "message": "/home/user/.cache/selenium/chromedriver/linux64/136.0.7103.113/chromedriver",
+    "driver_path": "/home/user/.cache/selenium/chromedriver/linux64/136.0.7103.113/chromedriver",
+    "browser_path": "/google/idx/builtins/bin/chromium-browser"
+  }
+
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}, error Failed to parse json output, executed: [--browser, chrome, --output, json]
+
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87+', java.version: '19.0.2'
+Driver info: driver.version: ChromeDriver
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+Error during crawling: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'firebase-dpt-1747539211716', ip: '10.88.0.3'
+
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+]]></system-err>
+  </testcase>
+</testsuite>

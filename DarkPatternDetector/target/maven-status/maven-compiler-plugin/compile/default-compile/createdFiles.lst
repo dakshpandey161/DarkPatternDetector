@@ -1,0 +1,15 @@
+com/example/demo/GeminiClient.class
+com/example/demo/StartupRunner.class
+com/example/demo/DarkPatternApplication.class
+com/example/demo/MainApplication.class
+com/example/demo/WebCrawler.class
+com/example/demo/FirebaseInitializer.class
+com/example/demo/UIDetector.class
+com/example/demo/DarkTextDetector.class
+com/example/demo/DarkPatternController.class
+com/example/demo/DetectionController.class
+com/example/demo/LearningManager$DetectedPattern.class
+com/example/demo/App.class
+com/example/demo/FirebaseConfig.class
+com/example/demo/LearningManager.class
+com/example/demo/FirebaseService.class
