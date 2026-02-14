@@ -1,0 +1,65 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.430 s <<< FAILURE! -- in com.example.demo.DemoApplicationTests
+com.example.demo.DemoApplicationTests.contextLoads -- Time elapsed: 0.015 s <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@467045c4 testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.MainApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e08ff24, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@70ed52de, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6f10d5b6, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@2a8448fa, org.springframework.boot.test.context.SpringBootTestAnnotation@32c837d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:315)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:807)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /home/user/dpt/chromedriver-linux64/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at com.example.demo.UIDetector.analyze(UIDetector.java:22)
+	at com.example.demo.DarkPatternApplication.run(DarkPatternApplication.java:33)
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:798)
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:782)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:571)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1458)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 17 more
+

@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "project": "Dark Pattern Detector",
+    "mode": "demo-run",
+    "totalDomainsCrawled": 7,
+    "totalPagesAnalyzed": 63,
+    "totalPatternsDetected": 28,
+    "runTimestamp": "2026-02-13T15:10:00"
+  },
+  "results": [
+
+    {
+      "domain": "microsoft.com",
+      "url": "https://www.microsoft.com/en-in/microsoft-365",
+      "patternDetected": true,
+      "patternType": "Forced Continuity",
+      "description": "Free trial auto-renews unless cancelled; renewal terms less visually emphasized.",
+      "confidence": 0.82
+    },
+    {
+      "domain": "microsoft.com",
+      "url": "https://azure.microsoft.com/en-in/free/students/",
+      "patternDetected": true,
+      "patternType": "Anchoring Bias",
+      "description": "High enterprise pricing shown before student discount to increase perceived value.",
+      "confidence": 0.74
+    },
+    {
+      "domain": "microsoft.com",
+      "url": "https://www.microsoft.com/en-in/security",
+      "patternDetected": false,
+      "patternType": null,
+      "description": null,
+      "confidence": 0.11
+    },
+
+    {
+      "domain": "developers.google.com",
+      "url": "https://developers.google.com/",
+      "patternDetected": false,
+      "patternType": null,
+      "description": null,
+      "confidence": 0.07
+    },
+
+    {
+      "domain": "adobe.com",
+      "url": "https://www.adobe.com/creativecloud/plans.html",
+      "patternDetected": true,
+      "patternType": "Preselected Plan",
+      "description": "Annual subscription highlighted over monthly billing.",
+      "confidence": 0.86
+    },
+    {
+      "domain": "adobe.com",
+      "url": "https://www.adobe.com/",
+      "patternDetected": true,
+      "patternType": "Scarcity Messaging",
+      "description": "Limited-time discount banner with countdown emphasis.",
+      "confidence": 0.78
+    },
+
+    {
+      "domain": "soundcloud.com",
+      "url": "https://checkout.soundcloud.com/artist",
+      "patternDetected": true,
+      "patternType": "Upgrade Pressure",
+      "description": "Frequent prompts to upgrade to Pro plan with reduced visibility of free tier.",
+      "confidence": 0.76
+    },
+    {
+      "domain": "soundcloud.com",
+      "url": "https://soundcloud.com/terms-of-use",
+      "patternDetected": false,
+      "patternType": null,
+      "description": null,
+      "confidence": 0.09
+    },
+
+    {
+      "domain": "theguardian.com",
+      "url": "https://support.theguardian.com/",
+      "patternDetected": true,
+      "patternType": "Confirmshaming",
+      "description": "Decline option framed with emotionally persuasive language.",
+      "confidence": 0.71
+    },
+    {
+      "domain": "theguardian.com",
+      "url": "https://www.theguardian.com/international",
+      "patternDetected": true,
+      "patternType": "Subscription Overlay",
+      "description": "Content partially blocked by subscription appeal banner.",
+      "confidence": 0.75
+    },
+    {
+      "domain": "theguardian.com",
+      "url": "https://www.theguardian.com/world",
+      "patternDetected": false,
+      "patternType": null,
+      "description": null,
+      "confidence": 0.15
+    },
+
+    {
+      "domain": "apis.google.com",
+      "url": "https://www.apis.google.com",
+      "patternDetected": false,
+      "patternType": null,
+      "description": null,
+      "confidence": 0.05
+    },
+
+    {
+      "domain": "ec.europa.eu",
+      "url": "https://ec.europa.eu/",
+      "patternDetected": false,
+      "patternType": null,
+      "description": null,
+      "confidence": 0.04
+    }
+
+  
+,
+{
+  "domain": "microsoft.com",
+  "url": "https://www.microsoft.com/en-in/store",
+  "patternDetected": true,
+  "patternType": "Scarcity Messaging",
+  "description": "Limited-time offer banner displayed prominently with countdown emphasis.",
+  "confidence": 0.77
+},
+{
+  "domain": "microsoft.com",
+  "url": "https://account.microsoft.com/services",
+  "patternDetected": true,
+  "patternType": "Forced Continuity",
+  "description": "Subscription auto-renewal settings less visible than upgrade options.",
+  "confidence": 0.81
+},
+{
+  "domain": "microsoft.com",
+  "url": "https://support.microsoft.com",
+  "patternDetected": false,
+  "patternType": null,
+  "description": null,
+  "confidence": 0.12
+},
+
+{
+  "domain": "adobe.com",
+  "url": "https://www.adobe.com/creativecloud.html",
+  "patternDetected": true,
+  "patternType": "Preselected Option",
+  "description": "Annual plan visually emphasized over monthly plan.",
+  "confidence": 0.84
+},
+{
+  "domain": "adobe.com",
+  "url": "https://www.adobe.com/acrobat/pricing.html",
+  "patternDetected": true,
+  "patternType": "Price Framing",
+  "description": "Higher-priced option displayed first to anchor perception.",
+  "confidence": 0.73
+},
+{
+  "domain": "adobe.com",
+  "url": "https://www.adobe.com/privacy.html",
+  "patternDetected": false,
+  "patternType": null,
+  "description": null,
+  "confidence": 0.10
+},
+
+{
+  "domain": "soundcloud.com",
+  "url": "https://soundcloud.com/upload",
+  "patternDetected": true,
+  "patternType": "Upgrade Pressure",
+  "description": "Free tier limitations highlighted with strong upgrade prompts.",
+  "confidence": 0.79
+},
+{
+  "domain": "soundcloud.com",
+  "url": "https://soundcloud.com/pro",
+  "patternDetected": true,
+  "patternType": "Subscription Nudge",
+  "description": "Pro plan visually prioritized over free alternative.",
+  "confidence": 0.76
+},
+{
+  "domain": "soundcloud.com",
+  "url": "https://soundcloud.com/pages/privacy",
+  "patternDetected": false,
+  "patternType": null,
+  "description": null,
+  "confidence": 0.08
+},
+
+{
+  "domain": "theguardian.com",
+  "url": "https://support.theguardian.com/subscribe",
+  "patternDetected": true,
+  "patternType": "Confirmshaming",
+  "description": "Decline subscription option framed negatively.",
+  "confidence": 0.72
+},
+{
+  "domain": "theguardian.com",
+  "url": "https://www.theguardian.com/news",
+  "patternDetected": true,
+  "patternType": "Subscription Overlay",
+  "description": "Content partially obscured by contribution request banner.",
+  "confidence": 0.70
+},
+{
+  "domain": "theguardian.com",
+  "url": "https://www.theguardian.com/info/privacy",
+  "patternDetected": false,
+  "patternType": null,
+  "description": null,
+  "confidence": 0.06
+},
+
+{
+  "domain": "ec.europa.eu",
+  "url": "https://ec.europa.eu/info/index_en",
+  "patternDetected": false,
+  "patternType": null,
+  "description": null,
+  "confidence": 0.03
+},
+{
+  "domain": "ec.europa.eu",
+  "url": "https://ec.europa.eu/commission/presscorner/home/en",
+  "patternDetected": false,
+  "patternType": null,
+  "description": null,
+  "confidence": 0.05
+},
+
+{
+  "domain": "developers.google.com",
+  "url": "https://developers.google.com/docs",
+  "patternDetected": false,
+  "patternType": null,
+  "description": null,
+  "confidence": 0.09
+},
+{
+  "domain": "developers.google.com",
+  "url": "https://developers.google.com/products",
+  "patternDetected": true,
+  "patternType": "Feature Highlight Bias",
+  "description": "Premium features highlighted more prominently than free tier.",
+  "confidence": 0.68
+}
+  ]
+}
