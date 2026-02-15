@@ -1,102 +1,129 @@
-# Dark Pattern Detector 🕵️‍♂️
+# 🛡 Dark Pattern Detection System (DPD)
 
-A Java-based automated system for detecting **dark and deceptive patterns** on websites using web crawling, AI-assisted classification, and a self-learning pattern library.
+An AI-powered automated web crawler that detects deceptive UI/UX dark patterns across live websites using a hybrid rule-based and AI classification pipeline.
 
-This project is designed for **research, auditing, and large-scale analysis** of manipulative UI/UX practices on the web.
+---
+
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/FHv1E-a-Dqs/hqdefault.jpg)](https://www.youtube.com/watch?v=FHv1E-a-Dqs)
+
+---
+
+## 📄 Research Paper
+
+This system is grounded in research on AI-generated and AI-amplified dark patterns.
+
+📖 Read the full paper on SSRN:
+
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6079910
 
 ---
 
 ## 🚀 Overview
 
-The Dark Pattern Detector crawls websites, analyzes textual and UI elements, and identifies dark patterns such as:
-- Hidden costs
-- Forced continuity
-- Fake urgency
-- Misleading language
-- Preselected choices
-- Obstructive UI patterns
+The Dark Pattern Detection System (DPD) is a Spring Boot–based backend application that:
 
-The system is **adaptive**:
-- On first encounter, a pattern is verified using **Gemini AI**
-- Verified patterns are stored in an internal library
-- Future encounters are **flagged automatically** without AI calls
+- Crawls live websites using Selenium WebDriver  
+- Extracts textual and UI signals  
+- Sends new pattern candidates to the Gemini API for classification  
+- Stores previously detected patterns in Firebase  
+- Reuses cached results to reduce redundant AI calls  
 
----
+The system identifies deceptive UX patterns such as:
 
-## 🧠 System Architecture
-
+- Forced continuity  
+- Scarcity messaging  
+- Misleading consent flows  
+- Preselected options  
+- Urgency manipulation  
 
 ---
 
-## 🛠️ Tech Stack
+## 🏗 System Architecture
 
-- **Java 17**
-- **Spring Boot**
-- **Maven**
-- **Selenium (Headless, optional)**
-- **OkHttp**
-- **Gemini AI (LLM-based verification)**
-- **Firebase (pattern storage, later phase)**
-- **Google Cloud (deployment, later phase)**
-
----
-
-## 📂 Project Structure
-
+WebCrawler  
+↓  
+Content Extraction (Text + UI)  
+↓  
+Gemini AI Classification  
+↓  
+Firebase Storage  
+↓  
+Pattern Reuse & Optimization  
 
 ---
 
-## ⚙️ How It Works
+## 🧠 Detection Pipeline
 
-1. **Crawl Initialization**
-   - Seed URLs
-   - Max depth
-   - Domain constraints
-   - Crawl session ID
+1. The crawler visits predefined seed URLs.  
+2. Visible page content and UI elements are extracted.  
+3. If content matches a known pattern, it is flagged immediately.  
+4. If new, the content is sent to Gemini for AI classification.  
+5. Confirmed patterns are stored in Firebase.  
+6. Future detections reuse stored knowledge to improve efficiency.  
 
-2. **Page Analysis**
-   - Text extraction
-   - UI inspection (DOM, CSS, visibility, behavior)
-
-3. **Detection Flow**
-   - Check against learned pattern library
-   - If unknown → consult Gemini AI
-   - Store high-confidence patterns
-
-4. **Self-Learning**
-   - Known patterns are flagged instantly
-   - Reduces AI dependency over time
+This architecture reduces redundant API calls while continuously expanding the internal detection library.
 
 ---
 
-## 🧪 Current Status
+## 📦 Installation & Setup
 
-✅ Deterministic crawler  
-✅ Config-driven crawl control  
-✅ Text-based dark pattern detection  
-🟡 UI-based detection (expanding)  
-🟡 Local data collection  
-🔜 Firebase integration  
-🔜 Google Cloud deployment  
-🔜 Selenium-based JS rendering  
+### Clone the Repository
 
----
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+cd DarkPatternDetector
 
-## ▶️ Running the Project
+### Set Gemini API Key (Environment Variable)
 
-Make sure you are in the directory containing `pom.xml`.
+Windows:
 
-```bash
+setx GEMINI_API_KEY "your_api_key_here"
+
+Restart the terminal after setting the variable.
+
+### Build the Project
+
+mvn clean install
+
+### Run the Application
+
 mvn spring-boot:run
-java --version
-# Java 17+
 
 ---
 
-If you want, next I can:
-- Tune this for **research paper / SSRN**
-- Rewrite it for **GitHub stars**
-- Add **architecture diagrams**
-- Make a **CV-ready project description**
+## ⚙ Configuration
 
-One step at a time.
+- Seed URLs can be modified inside `WebCrawler.java`
+- Firebase credentials must be placed in:
+
+src/main/resources/ServiceAccountKey.json
+
+---
+
+## 📊 Output
+
+Detected patterns are:
+
+- Logged in the console  
+- Stored in Firebase  
+- Available for reuse in future crawls  
+
+---
+
+## 🛠 Technology Stack
+
+- Java 17+  
+- Spring Boot 3  
+- Selenium 4  
+- Firebase Admin SDK  
+- Gemini API  
+- OkHttp  
+- Maven  
+
+---
+
+## 🎯 Objective
+
+To build a scalable AI-assisted system capable of identifying deceptive digital design practices and contributing toward more transparent and ethical user experiences.
