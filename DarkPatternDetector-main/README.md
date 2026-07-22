@@ -72,7 +72,7 @@ This architecture reduces redundant API calls while continuously expanding the i
 
 ### Clone the Repository
 
-git clone https://github.com/dakshpandey161/DarkPatternDetector-main.git
+git clone https://github.com/dakshpandey161/DarkPatternDetector/blob/main/DarkPatternDetector-main
 cd DarkPatternDetector
 
 ### Set Gemini API Key (Environment Variable)
